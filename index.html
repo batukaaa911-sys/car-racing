@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Realistic Car Racing</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="game-container">
+    <header>
+      <h1>🏎️ STREET RACING</h1>
+      <div class="stats">
+        <div>ОНОО: <span id="score">0</span></div>
+        <div>ХУРД: <span id="speed">0</span> km/h</div>
+      </div>
+    </header>
+
+    <div class="game-area">
+      <canvas id="gameCanvas"></canvas>
+
+      <div id="startScreen" class="overlay">
+        <h2>STREET RACING</h2>
+        <p>Уралдаанд бэлэн үү?</p>
+        <button id="startBtn">START RACE</button>
+      </div>
+
+      <div id="gameOverScreen" class="overlay hidden">
+        <h2>GAME OVER</h2>
+        <p>Таны оноо: <span id="finalScore">0</span></p>
+        <button id="restartBtn">RESTART</button>
+      </div>
+    </div>
+
+    <div class="controls">
+      <button id="leftBtn" aria-label="Зүүн">◀</button>
+      <button id="rightBtn" aria-label="Баруун">▶</button>
+    </div>
+
+    <p class="instructions">
+      PC: ← → эсвэл A / D товч ашиглана.<br>
+      Утас: Доорх сумнуудыг дарж удирдана.
+    </p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
